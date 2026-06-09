@@ -14,12 +14,12 @@ import {
   SiPostgresql,
   SiMysql,
   SiRedis,
-  SiAmazonec2,
   SiGooglecloud,
   SiDigitalocean,
   SiDocker,
   SiGithubactions,
 } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 import { GitBranchPlus } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 import type { IconType } from "react-icons";
@@ -60,7 +60,7 @@ const groups: Group[] = [
   {
     title: "Cloud",
     skills: [
-      { name: "AWS", Icon: SiAmazonec2, color: "#FF9900" },
+      { name: "AWS", Icon: FaAws, color: "#FF9900" },
       { name: "GCP", Icon: SiGooglecloud, color: "#4285F4" },
       { name: "DigitalOcean", Icon: SiDigitalocean, color: "#0080FF" },
     ],
