@@ -14,7 +14,7 @@ import {
   SiPostgresql,
   SiMysql,
   SiRedis,
-  SiAmazonwebservices,
+  SiAmazon,
   SiGooglecloud,
   SiDigitalocean,
   SiDocker,
@@ -60,7 +60,7 @@ const groups: Group[] = [
   {
     title: "Cloud",
     skills: [
-      { name: "AWS", Icon: SiAmazonwebservices, color: "#FF9900" },
+      { name: "AWS", Icon: SiAmazon, color: "#FF9900" },
       { name: "GCP", Icon: SiGooglecloud, color: "#4285F4" },
       { name: "DigitalOcean", Icon: SiDigitalocean, color: "#0080FF" },
     ],
