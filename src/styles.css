@@ -144,14 +144,12 @@
 @utility glass {
   background: rgba(17, 24, 39, 0.55);
   backdrop-filter: blur(20px) saturate(150%);
-  -webkit-backdrop-filter: blur(20px) saturate(150%);
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 @utility glass-strong {
   background: rgba(17, 24, 39, 0.85);
   backdrop-filter: blur(28px) saturate(180%);
-  -webkit-backdrop-filter: blur(28px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -213,5 +211,4 @@
 }
 @utility animate-marquee {
   animation: marquee 30s linear infinite;
-  }
 }
