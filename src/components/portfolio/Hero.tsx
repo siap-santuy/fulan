@@ -124,9 +124,9 @@ export default function Hero() {
           </div>
 
           <h1 className="text-balance text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl lg:text-[5.5rem]">
-            <span className="gradient-text">Software</span>
+            <span className="gradient-text">Fajri</span>
             <br />
-            <span className="gradient-text-brand">Engineer</span>
+            <span className="gradient-text-brand">Arvandi</span>
           </h1>
 
           <div className="mt-6 h-7 text-base text-[#9CA3AF] sm:text-lg">
@@ -138,9 +138,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2"
             >
               <Sparkles size={16} className="text-[#3B82F6]" />
-              <span className="font-medium text-white">Fajri Arvandi</span>
-              <span>·</span>
-              <span>{role}</span>
+              <span className="font-medium text-white">{role}</span>
             </motion.span>
           </div>
 

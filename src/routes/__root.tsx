@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Fajri Arvandi — Software Engineer" },
+      { title: "Fajri Arvandi" },
       {
         name: "description",
         content:
@@ -85,7 +85,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Fajri Arvandi" },
       { name: "theme-color", content: "#09090B" },
-      { property: "og:title", content: "Fajri Arvandi — Software Engineer" },
+      { property: "og:title", content: "Fajri Arvandi" },
       {
         property: "og:description",
         content:
@@ -93,7 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Fajri Arvandi — Software Engineer" },
+      { name: "twitter:title", content: "Fajri Arvandi" },
       {
         name: "twitter:description",
         content:
