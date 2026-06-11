@@ -1,13 +1,60 @@
 import { motion } from "framer-motion";
-import { Award, BadgeCheck } from "lucide-react";
+import { CalendarDays, Hash } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
-const certs = [
-  { title: "JavaScript Specialist", issuer: "Certiprof", year: "2024" },
-  { title: "Backend JavaScript Specialist", issuer: "Certiprof", year: "2024" },
-  { title: "Bangkit Cloud Computing", issuer: "Google · Bangkit Academy", year: "2023" },
-  { title: "IT Support Specialization", issuer: "Google · Coursera", year: "2023" },
-  { title: "Junior Web Developer", issuer: "BNSP", year: "2023" },
+type Cert = {
+  badge: string;
+  title: string;
+  issuer: string;
+  issued: string;
+  expires?: string;
+  credentialId: string;
+  accent: string;
+};
+
+const certs: Cert[] = [
+  {
+    badge: "JS",
+    title: "IT Specialist in JavaScript",
+    issuer: "Certiport",
+    issued: "Apr 2025",
+    expires: "Apr 2028",
+    credentialId: "wynLK-48eK",
+    accent: "#F59E0B",
+  },
+  {
+    badge: "BE",
+    title: "Backend JavaScript Specialist",
+    issuer: "Binar Academy",
+    issued: "Jan 2025",
+    credentialId: "10059589",
+    accent: "#3B82F6",
+  },
+  {
+    badge: "GCP",
+    title: "Cloud Computing Specialization",
+    issuer: "Bangkit Academy (Google)",
+    issued: "Jan 2024",
+    credentialId: "BA23/GRAD/XXIV-01/C614BSY3787",
+    accent: "#EF4444",
+  },
+  {
+    badge: "IT",
+    title: "IT Support Specialization",
+    issuer: "Coursera",
+    issued: "Jan 2024",
+    credentialId: "7Y3WU44QG78D",
+    accent: "#10B981",
+  },
+  {
+    badge: "WEB",
+    title: "Junior Web Developer",
+    issuer: "BNSP (National Certification)",
+    issued: "Apr 2023",
+    expires: "Apr 2026",
+    credentialId: "620192513224422023",
+    accent: "#8B5CF6",
+  },
 ];
 
 export default function Certifications() {
@@ -19,7 +66,7 @@ export default function Certifications() {
           title="Credentials & recognition"
           description="Continuous learning across cloud, backend, and modern web."
         />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {certs.map((c, i) => (
             <motion.div
               key={c.title}
@@ -28,23 +75,35 @@ export default function Certifications() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.05 }}
               className="group glass relative overflow-hidden rounded-2xl p-6 transition hover:border-white/20"
+              style={{ borderTop: `1px solid ${c.accent}66` }}
             >
               <div
-                className="absolute -right-10 -top-10 h-32 w-32 rounded-full opacity-0 blur-2xl transition-opacity group-hover:opacity-100"
-                style={{ background: "radial-gradient(circle, #3B82F6, transparent 70%)" }}
+                className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full opacity-20 blur-3xl transition-opacity group-hover:opacity-60"
+                style={{ background: `radial-gradient(circle, ${c.accent}, transparent 70%)` }}
               />
-              <div className="relative flex items-start justify-between">
-                <div className="grid h-10 w-10 place-items-center rounded-xl gradient-brand text-white shadow-[0_0_20px_-5px_rgba(59,130,246,0.6)]">
-                  <Award size={18} />
-                </div>
-                <BadgeCheck size={18} className="text-[#3B82F6]" />
+              <div
+                className="relative grid h-12 w-12 place-items-center rounded-xl border text-[11px] font-bold tracking-wider"
+                style={{
+                  color: c.accent,
+                  borderColor: `${c.accent}55`,
+                  background: `${c.accent}1A`,
+                }}
+              >
+                {c.badge}
               </div>
-              <h3 className="relative mt-5 text-base font-semibold text-white">
-                {c.title}
-              </h3>
-              <p className="relative mt-1 text-xs text-[#9CA3AF]">
-                {c.issuer} · {c.year}
+              <h3 className="relative mt-5 text-base font-semibold text-white">{c.title}</h3>
+              <p className="relative mt-1 text-sm font-medium" style={{ color: c.accent }}>
+                {c.issuer}
               </p>
+              <div className="relative mt-4 space-y-1.5 border-t border-white/5 pt-3 text-[11px] text-[#9CA3AF]">
+                <p className="inline-flex items-center gap-1.5">
+                  <CalendarDays size={11} /> Issued {c.issued}
+                  {c.expires && <> · Exp {c.expires}</>}
+                </p>
+                <p className="inline-flex items-center gap-1.5 font-mono">
+                  <Hash size={11} /> {c.credentialId}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
