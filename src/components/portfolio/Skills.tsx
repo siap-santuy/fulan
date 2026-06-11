@@ -30,11 +30,9 @@ import {
   SiFigma,
   SiFirebase,
   SiLaravel,
-  SiBullmq,
-  SiTypescript as SiTs,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
-import { Server, GitBranch } from "lucide-react";
+import { Server, GitBranch, Layers } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 import type { IconType } from "react-icons";
 
@@ -132,7 +130,7 @@ const marqueeTech: MTech[] = [
   { name: "Hono", Icon: SiHono, color: "#FF6B35" },
   { name: "TailwindCSS", Icon: SiTailwindcss, color: "#38BDF8" },
   { name: "Bun", Icon: SiBun, color: "#FBF0DF" },
-  { name: "BullMQ", Icon: SiBullmq, color: "#EF4444" },
+  { name: "BullMQ", Icon: Layers as unknown as IconType, color: "#EF4444" },
   { name: "Chakra UI", Icon: SiChakraui, color: "#319795" },
   { name: "Postman", Icon: SiPostman, color: "#FF6C37" },
   { name: "AWS", Icon: FaAws as unknown as IconType, color: "#FF9900" },
