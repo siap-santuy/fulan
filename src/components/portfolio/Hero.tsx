@@ -149,7 +149,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1qRzJDDw3hFaycAxUXBEQh1U3mte3RUwN/view?usp=drive_link"
               className="group inline-flex items-center gap-2 rounded-xl gradient-brand px-5 py-3 text-sm font-medium text-white shadow-[0_10px_30px_-10px_rgba(59,130,246,0.6)] transition hover:scale-[1.03]"
             >
               <Download size={16} />
@@ -172,13 +172,13 @@ export default function Hero() {
               <MapPin size={14} /> Jakarta, Indonesia
             </span>
             <a
-              href="mailto:fajri@example.com"
+              href="mailto:fajri42vandi@gmail.com"
               className="inline-flex items-center gap-2 hover:text-white"
             >
               <Mail size={14} /> fajri@example.com
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://id.linkedin.com/in/fajri-arvandi"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 hover:text-white"
@@ -186,7 +186,7 @@ export default function Hero() {
               <Linkedin size={14} /> LinkedIn
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/fajrCode"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 hover:text-white"

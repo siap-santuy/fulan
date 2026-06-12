@@ -88,7 +88,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://github.com"
+                href="https://github.com/fajrCode"
                 target="_blank"
                 rel="noreferrer"
                 className="group flex w-full items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
