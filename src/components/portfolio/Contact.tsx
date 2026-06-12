@@ -56,7 +56,7 @@ export default function Contact() {
             <div className="mt-6 space-y-3">
               <button
                 onClick={copyEmail}
-                className="group flex w-full items-center justify-between rounded-xl border border-white/10 bg-white/5 p-4 text-left transition hover:bg-white/10"
+                className="group flex w-full items-center justify-between rounded-lg border border-white/10 bg-white/5 p-4 text-left transition hover:bg-white/10"
               >
                 <div className="flex items-center gap-3">
                   <div className="grid h-9 w-9 place-items-center rounded-lg gradient-brand text-white">
@@ -76,7 +76,7 @@ export default function Contact() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noreferrer"
-                className="group flex w-full items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
+                className="group flex w-full items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
               >
                 <div className="grid h-9 w-9 place-items-center rounded-lg bg-[#0A66C2]/20 text-[#0A66C2]">
                   <Linkedin size={16} />
@@ -91,7 +91,7 @@ export default function Contact() {
                 href="https://github.com/fajrCode"
                 target="_blank"
                 rel="noreferrer"
-                className="group flex w-full items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
+                className="group flex w-full items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
               >
                 <div className="grid h-9 w-9 place-items-center rounded-lg bg-white/10 text-white">
                   <Github size={16} />
@@ -102,7 +102,7 @@ export default function Contact() {
                 </div>
               </a>
 
-              <div className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4">
+              <div className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-4">
                 <div className="grid h-9 w-9 place-items-center rounded-lg bg-emerald-500/20 text-emerald-400">
                   <MapPin size={16} />
                 </div>
@@ -139,14 +139,14 @@ export default function Contact() {
                 required
                 rows={6}
                 placeholder="Tell me about your project..."
-                className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder-[#6B7280] outline-none transition focus:border-[#3B82F6]/50 focus:ring-2 focus:ring-[#3B82F6]/20"
+                className="w-full rounded-lg border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder-[#6B7280] outline-none transition focus:border-[#3B82F6]/50 focus:ring-2 focus:ring-[#3B82F6]/20"
               />
             </div>
             <div className="mt-5 flex items-center justify-between">
               <p className="text-xs text-[#9CA3AF]">I respect your inbox. Replies within 24h.</p>
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 rounded-xl gradient-brand px-5 py-2.5 text-sm font-medium text-white shadow-[0_10px_30px_-10px_rgba(59,130,246,0.6)] transition hover:scale-[1.03]"
+                className="inline-flex items-center gap-2 rounded-lg gradient-brand px-5 py-2.5 text-sm font-medium text-white shadow-[0_10px_30px_-10px_rgba(59,130,246,0.6)] transition hover:scale-[1.03]"
               >
                 {sent ? <Check size={16} /> : <Send size={16} />}
                 {sent ? "Sent" : "Send message"}
@@ -170,7 +170,7 @@ function Field({
       </label>
       <input
         {...props}
-        className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder-[#6B7280] outline-none transition focus:border-[#3B82F6]/50 focus:ring-2 focus:ring-[#3B82F6]/20"
+        className="w-full rounded-lg border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder-[#6B7280] outline-none transition focus:border-[#3B82F6]/50 focus:ring-2 focus:ring-[#3B82F6]/20"
       />
     </div>
   );

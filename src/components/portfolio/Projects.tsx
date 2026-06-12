@@ -27,7 +27,7 @@ export default function Projects() {
         <div className="mt-12 flex justify-center">
           <Link
             to="/projects"
-            className="group inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
+            className="group inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
           >
             Show all projects
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />

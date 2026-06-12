@@ -88,7 +88,7 @@ export default function Certifications() {
                 style={{ background: `radial-gradient(circle, ${c.accent}, transparent 70%)` }}
               />
               <div
-                className="relative grid h-12 w-12 place-items-center rounded-xl border text-[11px] font-bold tracking-wider"
+                className="relative grid h-12 w-12 place-items-center rounded-lg border text-[11px] font-bold tracking-wider"
                 style={{
                   color: c.accent,
                   borderColor: `${c.accent}55`,

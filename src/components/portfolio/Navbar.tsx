@@ -39,7 +39,7 @@ export default function Navbar() {
           }`}
         >
           <a href="#home" className="group flex items-center gap-2">
-            <div className="grid h-9 w-9 place-items-center rounded-xl gradient-brand text-sm font-bold text-white shadow-[0_0_20px_-5px_rgba(59,130,246,0.6)]">
+            <div className="grid h-9 w-9 place-items-center rounded-lg gradient-brand text-sm font-bold text-white shadow-[0_0_20px_-5px_rgba(59,130,246,0.6)]">
               FA
             </div>
             <span className="text-sm font-semibold tracking-tight text-white">
@@ -61,7 +61,7 @@ export default function Navbar() {
 
           <a
             href="#contact"
-            className="hidden rounded-lg gradient-brand px-4 py-2 text-sm font-medium text-white shadow-[0_0_20px_-5px_rgba(59,130,246,0.6)] transition hover:scale-[1.03] md:inline-flex"
+            className="hidden rounded-md gradient-brand px-4 py-2 text-sm font-medium text-white shadow-[0_0_20px_-5px_rgba(59,130,246,0.6)] transition hover:scale-[1.03] md:inline-flex"
           >
             Get in touch
           </a>

@@ -234,7 +234,7 @@ export default function Experience() {
             <div className="mt-12 flex justify-center">
               <button
                 onClick={() => setShowAll((v) => !v)}
-                className="group inline-flex cursor-pointer items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
+                className="group inline-flex cursor-pointer items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
               >
                 <Briefcase size={14} />
                 {showAll ? "Show less" : `Show ${experiences.length - 3} more`}

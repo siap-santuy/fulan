@@ -150,14 +150,14 @@ export default function Hero() {
             <a
               href="https://drive.google.com/file/d/1qRzJDDw3hFaycAxUXBEQh1U3mte3RUwN/view?usp=drive_link"
               target="_blank"
-              className="group inline-flex items-center gap-2 rounded-xl gradient-brand px-5 py-3 text-sm font-medium text-white shadow-[0_10px_30px_-10px_rgba(59,130,246,0.6)] transition hover:scale-[1.03]"
+              className="group inline-flex items-center gap-2 rounded-lg gradient-brand px-5 py-3 text-sm font-medium text-white shadow-[0_10px_30px_-10px_rgba(59,130,246,0.6)] transition hover:scale-[1.03]"
             >
               <Download size={16} />
               Download Resume
             </a>
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
+              className="group inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
             >
               View Projects
               <ArrowRight

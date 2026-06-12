@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="relative border-t border-white/5 py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 sm:flex-row">
         <div className="flex items-center gap-2 text-sm text-[#9CA3AF]">
-          <div className="grid h-7 w-7 place-items-center rounded-lg gradient-brand text-[10px] font-bold text-white">
+          <div className="grid h-7 w-7 place-items-center rounded-md gradient-brand text-[10px] font-bold text-white">
             FA
           </div>
           <span>© {new Date().getFullYear()} Fajri Arvandi. Crafted in Jakarta.</span>
