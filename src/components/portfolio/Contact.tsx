@@ -98,7 +98,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs text-[#9CA3AF]">GitHub</div>
-                  <div className="text-sm font-medium text-white">@fajriarvandi</div>
+                  <div className="text-sm font-medium text-white">@fajrCode</div>
                 </div>
               </a>
 
