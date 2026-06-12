@@ -123,8 +123,8 @@ export default function Hero() {
             Available for opportunities
           </div>
 
-          <h1 className="text-balance text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl lg:text-[5.5rem]">
-            <span className="gradient-text">Fajri </span>
+          <h1 className="whitespace-nowrap text-balance text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl lg:text-[5.5rem]">
+            <span className="gradient-text">Fajri</span>{" "}
             <span className="gradient-text-brand">Arvandi</span>
           </h1>
 
