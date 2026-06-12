@@ -18,7 +18,7 @@ import {
   SiPrisma,
 } from "react-icons/si";
 
-const roles = ["Fullstack Developer", "Backend Engineer", "API Architect", "Problem Solver"];
+const roles = ["Backend Engineer", "Software Engineer", "Fullstack Developer", "Business Process Automation"];
 
 function useRotating(words: string[], interval = 2200) {
   const [i, setI] = useState(0);
