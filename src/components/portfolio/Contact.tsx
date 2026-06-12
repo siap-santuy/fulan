@@ -3,7 +3,7 @@ import { Mail, Github, Linkedin, Copy, Check, Send, MapPin } from "lucide-react"
 import { useState } from "react";
 import SectionHeader from "./SectionHeader";
 
-const EMAIL = "fajri.arvandi@example.com";
+const EMAIL = "fajri42vandi@gmail.com";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
@@ -83,7 +83,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs text-[#9CA3AF]">LinkedIn</div>
-                  <div className="text-sm font-medium text-white">/in/fajriarvandi</div>
+                  <div className="text-sm font-medium text-white">/in/fajri-arvandi</div>
                 </div>
               </a>
 
@@ -125,7 +125,7 @@ export default function Contact() {
           >
             <div className="grid gap-4 sm:grid-cols-2">
               <Field label="Name" name="name" placeholder="Jane Doe" required />
-              <Field label="Email" name="email" type="email" placeholder="jane@company.com" required />
+              <Field label="Email" name="email" type="email" placeholder="gmail" required />
             </div>
             <div className="mt-4">
               <Field label="Subject" name="subject" placeholder="Let's collaborate" />

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CalendarDays, Hash } from "lucide-react";
+import { ArrowUpRight, CalendarDays, Hash } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
 type Cert = {
@@ -10,6 +10,7 @@ type Cert = {
   expires?: string;
   credentialId: string;
   accent: string;
+  url: string;
 };
 
 const certs: Cert[] = [
@@ -21,6 +22,7 @@ const certs: Cert[] = [
     expires: "Apr 2028",
     credentialId: "wynLK-48eK",
     accent: "#F59E0B",
+    url: "https://drive.google.com/file/d/1iXIapLYXhcjSVx9EarqE3gWjuq94ikpV/view"
   },
   {
     badge: "BE",
@@ -29,6 +31,7 @@ const certs: Cert[] = [
     issued: "Jan 2025",
     credentialId: "10059589",
     accent: "#3B82F6",
+    url: "https://drive.google.com/file/d/1OLRS8ZogarIq5aA-rlAauduSEsVzAFtN/view"
   },
   {
     badge: "GCP",
@@ -37,6 +40,7 @@ const certs: Cert[] = [
     issued: "Jan 2024",
     credentialId: "BA23/GRAD/XXIV-01/C614BSY3787",
     accent: "#EF4444",
+    url: "https://drive.google.com/file/d/1-f1lf-EqrCGw1Zkz28Dg1v1N0-BwDUCD/view"
   },
   {
     badge: "IT",
@@ -45,6 +49,7 @@ const certs: Cert[] = [
     issued: "Jan 2024",
     credentialId: "7Y3WU44QG78D",
     accent: "#10B981",
+    url: "https://www.coursera.org/account/accomplishments/specialization/7Y3WU44QG78D"
   },
   {
     badge: "WEB",
@@ -54,6 +59,7 @@ const certs: Cert[] = [
     expires: "Apr 2026",
     credentialId: "620192513224422023",
     accent: "#8B5CF6",
+    url: "https://drive.google.com/file/d/1FVb9bzxabRtP_-_lAQ-l-nEXTe3fyyov/view?trk=public_profile_see-credential"
   },
 ];
 
@@ -91,7 +97,16 @@ export default function Certifications() {
               >
                 {c.badge}
               </div>
-              <h3 className="relative mt-5 text-base font-semibold text-white">{c.title}</h3>
+              <a href={c.url} target="_blank" className="flex mt-5">
+                <h3 className="relative text-base font-semibold text-white">
+                  {c.title} 
+                </h3>
+                <ArrowUpRight
+                  size={14}
+                  className="text-[#9CA3AF] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 mt-1 ml-1"
+                  style={{ color: undefined }}
+                />
+              </a>
               <p className="relative mt-1 text-sm font-medium" style={{ color: c.accent }}>
                 {c.issuer}
               </p>

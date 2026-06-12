@@ -19,9 +19,9 @@ type Exp = {
 
 const experiences: Exp[] = [
   {
-    company: "Paragon Technology and Innovation",
+    company: "PT. Paragon Technology and Innovation",
     role: "Software Engineer Intern",
-    period: "Aug 2024 — Present",
+    period: "Nov 2025 — Mey 2026",
     location: "Jakarta, Indonesia",
     type: "Internship",
     summary:
@@ -75,9 +75,9 @@ const experiences: Exp[] = [
     accent: "#F59E0B",
   },
   {
-    company: "PT Surveyor Indonesia",
+    company: "PT. Surveyor Indonesia",
     role: "Software Engineer Intern",
-    period: "Jul 2023 — Sep 2023",
+    period: "Aug 2023 — Oct 2023",
     location: "Jakarta, Indonesia",
     type: "Internship",
     summary:
@@ -95,7 +95,7 @@ const experiences: Exp[] = [
   {
     company: "Bangkit Academy",
     role: "Cloud Computing Cohort",
-    period: "Feb 2023 — Jul 2023",
+    period: "Aug 2023 — Jan 2024",
     location: "Remote",
     type: "Cohort",
     summary:
@@ -117,7 +117,7 @@ function ExpCard({ e, side, onClick }: { e: Exp; side: "left" | "right"; onClick
     <button
       type="button"
       onClick={onClick}
-      className="group glass relative w-full overflow-hidden rounded-2xl p-6 text-left transition hover:border-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
+      className="group cursor-pointer glass relative w-full overflow-hidden rounded-2xl p-6 text-left transition hover:border-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
       style={{ borderTop: `1px solid ${e.accent}55` }}
     >
       <div
@@ -158,9 +158,8 @@ function ExpCard({ e, side, onClick }: { e: Exp; side: "left" | "right"; onClick
         ))}
       </div>
       <span
-        className={`mt-4 inline-flex items-center gap-1 text-[11px] font-medium opacity-0 transition-opacity group-hover:opacity-100 ${
-          side === "right" ? "md:ml-auto md:flex md:justify-end" : ""
-        }`}
+        className={`mt-4 inline-flex items-center gap-1 text-[11px] font-medium opacity-0 transition-opacity group-hover:opacity-100 ${side === "right" ? "md:ml-auto md:flex md:justify-end" : ""
+          }`}
         style={{ color: e.accent }}
       >
         Read details →
@@ -235,7 +234,7 @@ export default function Experience() {
             <div className="mt-12 flex justify-center">
               <button
                 onClick={() => setShowAll((v) => !v)}
-                className="group inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
+                className="group inline-flex cursor-pointer items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/10"
               >
                 <Briefcase size={14} />
                 {showAll ? "Show less" : `Show ${experiences.length - 3} more`}

@@ -150,6 +150,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
               href="https://drive.google.com/file/d/1qRzJDDw3hFaycAxUXBEQh1U3mte3RUwN/view?usp=drive_link"
+              target="_blank"
               className="group inline-flex items-center gap-2 rounded-xl gradient-brand px-5 py-3 text-sm font-medium text-white shadow-[0_10px_30px_-10px_rgba(59,130,246,0.6)] transition hover:scale-[1.03]"
             >
               <Download size={16} />
