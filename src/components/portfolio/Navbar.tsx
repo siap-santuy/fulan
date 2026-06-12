@@ -43,7 +43,7 @@ export default function Navbar() {
               FA
             </div>
             <span className="text-sm font-semibold tracking-tight text-white">
-              Fajri<span className="text-[#9CA3AF]">.dev</span>
+              Fajri<span className="text-[#9CA3AF]"> A</span>
             </span>
           </a>
 

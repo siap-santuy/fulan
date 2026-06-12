@@ -142,9 +142,8 @@ export default function Hero() {
           </div>
 
           <p className="mt-6 max-w-2xl text-pretty text-[15px] leading-relaxed text-[#9CA3AF] sm:text-base">
-            I build production-grade APIs, scalable backends, and modern fullstack
-            applications. Currently shipping cloud-native platforms for startups and
-            enterprises.
+            Build production-grade APIs, scalable backends, modern fullstack applications and 
+            intelligent automation systems.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -176,7 +175,7 @@ export default function Hero() {
               href="mailto:fajri42vandi@gmail.com"
               className="inline-flex items-center gap-2 hover:text-white"
             >
-              <Mail size={14} /> fajri@example.com
+              <Mail size={14} /> Gmail
             </a>
             <a
               href="https://id.linkedin.com/in/fajri-arvandi"

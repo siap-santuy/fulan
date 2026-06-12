@@ -1,9 +1,12 @@
-import koneksaImg from "@/assets/project-koneksa.jpg";
-import taringImg from "@/assets/project-taring.jpg";
-import kataustadzImg from "@/assets/project-kataustadz.jpg";
-import ericeImg from "@/assets/project-erice.jpg";
-import travelynkImg from "@/assets/project-travelynk.jpg";
-import coffeegitImg from "@/assets/project-coffeegit.jpg";
+/* eslint-disable prettier/prettier */
+import { 
+    koneksaImg,
+    taringImg,
+    kataustadzImg,
+    ericeImg,
+    travelynkImg,
+    coffeegitImg
+ } from "@/assets"
 
 export type Project = {
   name: string;

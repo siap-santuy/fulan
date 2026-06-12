@@ -28,7 +28,7 @@ const stats = [
   { value: 101, suffix: "+", label: "Tasks completed", Icon: Code2 },
   { value: 11, suffix: "", label: "Agile sprints", Icon: GitBranch },
   { value: 12, suffix: "+", label: "Production releases", Icon: Rocket },
-  { value: 4, suffix: "+", label: "Companies worked with", Icon: Building2 },
+  { value: 3, suffix: "+", label: "Companies worked with", Icon: Building2 },
 ];
 
 export default function About() {
@@ -57,9 +57,9 @@ export default function About() {
               Building reliable software that ships.
             </h3>
             <p className="mt-4 text-[15px] leading-relaxed text-[#9CA3AF]">
-              I focus on the messy middle of software: API design, data
+              Focus on the messy middle of software: API design, data
               modeling, queues, integrations, and the kind of infrastructure that quietly
-              keeps products alive at 3 AM. From small startups to enterprise platforms,
+              keeps products alive. From small startups to enterprise platforms,
               I&apos;ve shipped products used by real teams in production.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">

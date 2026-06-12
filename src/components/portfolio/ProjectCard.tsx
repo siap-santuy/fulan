@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useState } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { ExternalLink, Github, ArrowUpRight, ChevronLeft, ChevronRight, X, Calendar, Briefcase } from "lucide-react";
